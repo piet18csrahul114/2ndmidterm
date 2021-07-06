@@ -5,9 +5,9 @@ from flask_ngrok import run_with_ngrok
 import pickle
 app = Flask(__name__)
 from keras.models import load_model
-model = load_model('modelANN.h5')
+model = load_model('II-midterm.h5')
 # Importing the dataset
-dataset = pd.read_csv('diabetes.csv')
+dataset = pd.read_csv('PCA and NN dataset1.csv')
 # Extracting dependent and independent variables:
 # Extracting independent variable:
 X = dataset.iloc[:, :-1].values
